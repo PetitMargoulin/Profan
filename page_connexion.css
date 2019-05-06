@@ -1,0 +1,39 @@
+
+
+.formulaire
+{
+    margin-top: 20vw;
+    margin-left: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 5vw;
+    border-style:solid;
+    border-width: 1px;
+    
+}
+
+p
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entree
+{
+    width: 50%
+}
+
+#envoi
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+}
+
+
+
+
+    
+    
