@@ -22,6 +22,13 @@ main {
 .btn.btn-primary:hover {
   background-color: #264d73;
 }
+.btn.btn-secondary {
+  background-color: #fff;
+  color: #336699;
+}
+.btn.btn-secondary:hover {
+  background-color: #e6e6e6;
+}
 .btn:not(.btn-primary) {
   color: #336699;
 }
@@ -54,6 +61,47 @@ footer img {
 .title {
   color: #336699;
   margin-bottom: 20px;
+}
+
+.homepage-container {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4d4d4d;
+  background-blend-mode: overlay;
+}
+.homepage-container h1 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .homepage-container h1 {
+    font-size: 3em;
+  }
+}
+.homepage-container h2 {
+  color: #fff;
+  font-size: 2em;
+}
+.homepage-container .links {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homepage-container .links .btn {
+  margin-top: 30px;
+  border-width: 4px;
+}
+.homepage-container .links .btn:nth-child(1) {
+  color: #336699;
+  border-color: #336699;
+}
+.homepage-container .links .btn:nth-child(2) {
+  color: #e09d23;
+  border-color: #e09d23;
 }
 
 /*# sourceMappingURL=style.css.map */
