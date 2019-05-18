@@ -2,6 +2,7 @@
 // VARIABLES
 // --------------------------
 $primary: #336699;
+$secondary: #e09d23;
 
 $white: #fff;
 $black: #000;
@@ -48,6 +49,15 @@ main {
 
     &:hover {
       background-color: darken($primary, 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $white;
+    color: $primary;
+
+    &:hover {
+      background-color: darken($white, 10%);
     }
   }
 
@@ -98,4 +108,54 @@ footer {
 .title {
   color: $primary;
   margin-bottom: 20px;
+}
+
+// --------------------------
+// HOMEPAGE
+// --------------------------
+
+.homepage-container {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $grey-30;
+  background-blend-mode: overlay;
+
+  h1 {
+    font-size: 2em;
+    color: $white;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+      font-size: 3em;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: 2em;
+  }
+
+  .links {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .btn {
+      margin-top: 30px;
+      border-width: 4px;
+
+      &:nth-child(1) {
+        color: $primary;
+        border-color: $primary;
+      }
+
+      &:nth-child(2) {
+        color: $secondary;
+        border-color: $secondary;
+      }
+    }
+  }
 }
