@@ -10,14 +10,18 @@
 
 <?php
 session_start();
+?>
 
+<body>
+<header>
+    <?php include "templates/header.html" ?>
+</header>
+<main>
+<?php
 if (isset($_SESSION['id']) AND isset($_SESSION['pseudo'])) {
     echo 'Bonjour ' . $_SESSION['pseudo'];
 }
 ?>
-
-<body>
-
 <form action="envoi_commandes.php" method="post">
     <input class="" type="text" name="" placeholder=""/>
     <input class="" type="text" name="" placeholder=""/>
@@ -97,5 +101,10 @@ if (isset($_SESSION['id']) AND isset($_SESSION['pseudo'])) {
     <input class="" type="text" name="" placeholder=""/>
     <input class="" type="text" name="" placeholder=""/>
 </form>
+</main>
+
+<footer>
+    <?php include "templates/footer.html" ?>
+</footer>
 </body>
 </html>

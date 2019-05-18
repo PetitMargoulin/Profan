@@ -9,6 +9,10 @@
     </head>
 
     <body>
+    <header>
+    <?php include "templates/header.html" ?>
+    </header>
+    <main>
     <?php
         try
         {
@@ -31,5 +35,9 @@
 
         }
         ?>
+    </main>
+    <footer>
+    <?php include "templates/footer.html" ?>
+    </footer>
     </body>
 </html>
