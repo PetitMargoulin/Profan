@@ -82,6 +82,14 @@ header {
     height: 50px;
     background-color: $grey-95;
     color: $primary;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: $primary;
+    }
   }
 }
 // --------------------------
